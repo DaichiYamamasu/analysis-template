@@ -1,0 +1,73 @@
+{
+  // query syntax
+  "select": {
+    "prefix": "select",
+    "body": [
+      "SELECT\nFROM\nWHERE"
+    ],
+    "description": "select"
+  },
+  "with": {
+    "prefix": "with",
+    "body": [
+      "WITH\n  hoge AS (",
+      "SELECT\nFROM\nWHERE",
+      "  )"
+    ],
+    "description": "with"
+  },
+  "with_not_clause": {
+    "prefix": "with_not_clauseth",
+    "body": [
+      "hoge AS (",
+      "SELECT\nFROM\nWHERE",
+      "  )"
+    ],
+    "description": "with_not_clause"
+  },
+  "groupby": {
+    "prefix": "groupby",
+    "body": [
+      "GROUP BY"
+    ],
+    "description": "groupby"
+  },
+  "orderby": {
+    "prefix": "orderby",
+    "body": [
+      "ORDER BY"
+    ],
+    "description": "orderby"
+  },
+  "qualify": {
+    "prefix": "qualify",
+    "body": [
+      "QUALIFY"
+    ],
+    "description": "qualify"
+  },
+  "inner join": {
+    "prefix": "inner join",
+    "body": [
+      "INNER JOIN"
+    ],
+    "description": "inner join"
+  },
+  "left join": {
+    "prefix": "left join",
+    "body": [
+      "LEFT JOIN"
+    ],
+    "description": "left join"
+  },
+
+  //function
+  "date": {
+    "prefix": "date",
+    "body": [
+      "DATE(timestamp_expression, time_zone_expression)"
+    ],
+    "description": "date"
+  },
+
+}
